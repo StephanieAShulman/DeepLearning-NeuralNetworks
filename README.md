@@ -14,11 +14,11 @@ Implementing neural networks using the TensorFlow platform in Python
 ### Results
 #### A. Data Preprocessing
 
-|                   | Variable(s)                                                                                     |
-|-------------------|-------------------------------------------------------------------------------------------------|
-| Target            | Is Successful                                                                                   |
-| Features          | Application Type, Affiliation, Classification Use Case, Organization, Income Amount, Ask Amount |
-| Neither (Removed) | EIN, Name, Status, Special Consideration                                                        |
+|            | Variable(s)                                                                                     |
+|------------|-------------------------------------------------------------------------------------------------|
+| Target     | Is Successful                                                                                   |
+| Features   | Application Type, Affiliation, Classification Use Case, Organization, Income Amount, Ask Amount |
+| Neither    | EIN, Name, Status, Special Consideration                                                        |
 
 * From a total of 12 variables, the target was defined success following funding.
 * Four variables were dropped due to lack of benefit (EIN, name) or importance (status, special consideration) in the overall model.
