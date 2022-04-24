@@ -26,5 +26,8 @@ Implementing neural networks using the TensorFlow platform in Python
 
 #### B. Compiling, Training, and Evaluating the Model
 
+![NN_model](https://user-images.githubusercontent.com/30667001/164988809-a77d9642-b896-4f0e-a8cd-5ec1c4676167.png)
+
+
 ### Summary
 
