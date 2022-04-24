@@ -1,4 +1,3 @@
-
 # Neural Network Charity Analysis
 Implementing neural networks using the TensorFlow platform in Python
 
@@ -10,6 +9,7 @@ Implementing neural networks using the TensorFlow platform in Python
 - Libraries: TensorFlow, Pandas, Scikit-learn
 
 ### Project Overview 
+Doing good work is important business, and the nonprofit Alphabet Soup needs to make sure that all donations are value-add. For this project, a deep learning neural network model was developed to evaluate a large dataset of past recipients with the goal of classifying which donations were likely to result in successful outcomes rather than missed opportunities. 
 
 ### Results
 #### A. Data Preprocessing
@@ -27,7 +27,22 @@ Implementing neural networks using the TensorFlow platform in Python
 #### B. Compiling, Training, and Evaluating the Model
 ![NN_model](https://user-images.githubusercontent.com/30667001/164988809-a77d9642-b896-4f0e-a8cd-5ec1c4676167.png)
 
-![NN_Table](https://user-images.githubusercontent.com/30667001/164989763-d98f7a60-2b71-435b-b308-fd9fd31fa282.png)
+| Model                            | Input      Features | Layer 1 | Layer 2 | Layer 3 | Total      Parameters | Epochs | Accuracy | Target      >75% |
+|----------------------------------|:-------------------:|:-------:|:-------:|:-------:|:---------------------:|:------:|:--------:|:----------------:|
+| Original NN                      |          9          |    8    |    5    |         |          403          |   100  |    73%   |        No        |
+| **Optimization**                 |                     |         |         |         |                       |        |          |                  |
+| Features reduced                 |          7          |    8    |    5    |         |          355          |   100  |    73%   |        No        |
+| Additional hidden layer          |          7          |    8    |    5    |    10   |          420          |   100  |    72%   |        No        |
+| Epochs increased to 150          |          7          |    8    |    5    |         |          355          |   150  |    73%   |        No        |
+| **Additional (no code)**         |                     |         |         |         |                       |        |          |                  |
+| Epochs decreased to 50           |          9          |    8    |    5    |         |          403          |   50   |    44%   |        No        |
+| Epochs decreased to 75           |          9          |    8    |    5    |         |          403          |   75   |    44%   |        No        |
+| Nodes increased                  |                     |    20   |    10   |         |          880          |   100  |    73%   |        No        |
+| Leaky ReLu assigned              |          9          |    8    |    5    |         |          403          |   100  |    73%   |        No        |
+| **Comparison**                   |                     |         |         |         |                       |        |          |                  |
+| Logit                            |                     |         |         |         |                       |        |    46%   |        No        |
+| SVM                              |                     |         |         |         |                       |        |    72%   |        No        |
+| RF                               |                     |         |         |         |                       |        |    71%   |        No        |
 
 - The original model achieved 73% accuracy with a total of 403 parameters run in 100 epochs.
 - NN model accuracy was compared to that of Logit, SVM and Random Forest models.
@@ -39,4 +54,3 @@ Implementing neural networks using the TensorFlow platform in Python
 
 ### Summary
 Neural network hidden layers are good at uncovering important features, especially when dealing with a great deal of variables. This dataset, however, was more limited. Over 65% of modeling could be captured by three features alone (amount requested, being independently affiliated and company affiliated) as uncovered in the feature importance review. Additionally, the resources to run both the NN and SVM models were more considerable than that of RF, yet all achieved similar accuracy. In this instance, the simpler approach is likely better. Next steps should include finding ways to optimize the RF approach, such as increasing the number of trees.
-
