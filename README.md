@@ -20,7 +20,7 @@ Doing good work is important business, and the nonprofit Alphabet Soup needs to 
 | Features   | Application Type, Affiliation, Classification Use Case, Organization, Income Amount, Ask Amount |
 | Neither    | EIN, Name, Status, Special Consideration                                                        |
 
-* From a total of 12 variables, the target was defined success following funding.
+* From a total of 12 variables, the target was defined as operational success following funding by Alphabet Soup.
 * Four variables were dropped due to lack of benefit (EIN, name) or importance (status, special consideration) in the overall model.
 * The remaining features were incorporated into the model.
 
